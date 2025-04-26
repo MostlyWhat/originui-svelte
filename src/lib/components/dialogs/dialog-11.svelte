@@ -23,8 +23,8 @@
 								How hard was it to set up your account?
 							</legend>
 							<RadioGroup
-								value=""
 								class="flex gap-0 -space-x-px rounded-lg shadow-sm shadow-black/5"
+								value=""
 							>
 								{#each Array.from({ length: 9 }) as _, index (index)}
 									<label
@@ -43,19 +43,19 @@
 						</fieldset>
 						<div class="mt-2 flex justify-between text-xs text-muted-foreground">
 							<p>Very easy</p>
-							<p>Very dificult</p>
+							<p>Very difficult</p>
 						</div>
 					</div>
 					<div class="space-y-2">
 						<Label>Why did you give this rating?</Label>
 						<Textarea
+							aria-label="Send feedback"
 							id="feedback"
 							placeholder="How can we improve Origin UI?"
-							aria-label="Send feedback"
 						/>
 					</div>
 				</div>
-				<Button type="button" class="w-full">Send feedback</Button>
+				<Button class="w-full" type="button">Send feedback</Button>
 			</form>
 		</div>
 	</Dialog.Content>
